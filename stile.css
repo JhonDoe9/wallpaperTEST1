@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+
+}
+
+/* FONT */
+@font-face {
+    font-family: "clock";
+    src: url("DS-DIGI.TTF");
+}
+
+@font-face {
+    font-family: "date";
+    src: url("The_Vintage.otf");
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+img {
+    width: 1920px;
+    height: 1080px;
+}
+
+
+
+/* TIME */
+input[type="checkbox"] {
+
+    background-color: #007bff !important;
+    border: 1px solid #007bff;
+    border-radius: 30px;
+    position: absolute;
+    display: none;
+    right: 0;
+}
+
+
+input[type="checkbox"]:checked {
+    background-color: #0056b3;
+    border: 1px solid #0056b3;
+
+}
+
+#oggetto {
+    position: absolute;
+}
+
+.time {
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    /* text-shadow: 0 3px 4px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.hms {
+    font-family: "clock";
+    font-size: 300px;
+    font-weight: 300;
+    /* transform: skewX(-7deg); */
+}
+
+.date {
+    margin-top: -45px;
+    font-weight: 600;
+    font-family: "date";
+    font-size: 77px;
+    letter-spacing: 3px;
+
+}
